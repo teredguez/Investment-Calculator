@@ -24,5 +24,13 @@ export class UserInputComponent {
     expectedReturn:+this.enteredExpectedReturn,
     annualInvestment: +this.enteredInitiaInvestment
     });
+    this.resetForm();
+  }
+
+  resetForm(){
+    this.enteredInitiaInvestment = '0';
+    this.enteredAnnualInvestment = '0';
+    this.enteredExpectedReturn = '5';
+    this.enteredDuration = '10';
   }
 }
